@@ -58,7 +58,7 @@ The distributor MUST send a broadcast intent to one of the following action when
 ### org.unifiedpush.android.distributor.UNREGISTER
 
 When the distributor handles this action :
-* MUST send a broadcast intent to the action org.unifiedpush.android.connector.UNREGISTERED of the registered app.
+* MUST send a broadcast intent to the action org.unifiedpush.android.connector.UNREGISTERED of the registered app if and only if the app was registered with the provided token.
 
 ### org.unifiedpush.android.distributor.MESSAGE_ACK
 
